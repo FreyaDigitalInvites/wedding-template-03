@@ -1,0 +1,107 @@
+.rsvp-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  background-image: url('./Green Floral Wedding Invitation.jpg');
+  background-position: top;
+  background-size: auto;
+}
+
+.card-doa {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+.arabic-text {
+  font-size: 24px;
+  color: #505f41;
+  font-family: 'Scheherazade New', serif;
+  margin-bottom: 10px;
+}
+
+.rsvp-container p {
+  font-size: 12px;
+  color: #505f41;
+  margin: 10px 0;
+}
+
+.rsvp-container h2 {
+  font-family: "Great Vibes", cursive;
+  color: #505f41;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.rsvp-form input, .rsvp-form textarea, .rsvp-form select {
+  width: 100%;
+  max-width: 250px;
+  min-width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.rsvp-form textarea {
+  max-width: 250px;
+  min-width: 250px;
+  max-height: 250px;
+  min-height: 100px;
+}
+
+.rsvp-form button {
+  background-color: #505f41;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp-form button:hover {
+  background-color: #3c3c3c;
+}
+
+.wishes-list {
+  margin-top: 0px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.wish-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.wish-item p {
+  margin: 5px 0;
+  color: #505f41;
+}

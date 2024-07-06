@@ -1,0 +1,126 @@
+/* Base styles */
+.Mempelai {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-in-out;
+  background-image: url('./Green Floral Wedding Invitation.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.rings-icon {
+  width: 30px;
+  height: auto;
+  animation: scaleAnimation 2s infinite;
+}
+
+@keyframes scaleAnimation {
+     0% {
+        transform: translateY(-50%) scale(1);
+    }
+    50% {
+        transform: translateY(-50%) scale(1.2);
+    }
+    100% {
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+.Mempelai.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animasi slide-up untuk gambar */
+.img-mempelai {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px #505f41;
+  margin: 0;
+  object-fit: cover;
+  transform: translateY(20px);
+  transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.img-mempelai.slide-up {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mempelai-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.mempelai-wanita, .mempelai-pria {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mempelai-wanita {
+  text-align: left;
+}
+
+.mempelai-pria {
+  text-align: right;
+}
+
+.mempelai-wanita h2, .mempelai-pria h2 {
+  font-size: 30px;
+  color: #505f41;
+  
+}
+
+.Mempelai h1, .Mempelai h2 {
+  font-family: "Great Vibes", cursive;
+  color: #505f41;
+}
+
+.Mempelai h1 {
+  color: #505f41;
+  font-size: 30px;
+  
+}
+
+.Mempelai p {
+  color: #505f41;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .Mempelai {
+
+    max-width: 95%;
+  }
+
+  .mempelai-details {
+    flex-direction: column;
+  }
+
+  .mempelai-wanita img, .mempelai-pria img {
+    max-width: 150px;
+  }
+
+  .mempelai-wanita, .mempelai-pria {
+    text-align: center;
+  }
+}

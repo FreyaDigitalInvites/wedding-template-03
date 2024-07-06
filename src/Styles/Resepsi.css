@@ -1,0 +1,161 @@
+.resepsi-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.resepsi-container h2, .resepsi-container h3 {
+  font-family: "Great Vibes", cursive;
+  color: #505f41;
+}
+
+.resepsi-container p {
+  color: #505f41;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  color: #505f41;
+  margin: 20px 0;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid #505f41;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-time {
+  font-size: 24px;
+  font-weight: bold;
+  color: #505f41;
+}
+
+.countdown-label {
+  font-size: 12px;
+  color: #505f41;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.resepsi-container .card-akad,
+.resepsi-container .card {
+  animation: slide-up 1s ease-out;
+}
+
+.resepsi-container .card-akad {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url('./Green Floral Wedding Invitation.jpg');
+  background-position: top;
+  background-size: cover;
+}
+
+.resepsi-container .card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url('./Green Floral Wedding Invitation.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+.card h4, .card-akad h4 {
+  font-family: "Great Vibes", cursive;
+  color: #505f41;
+  font-size: 24px;
+}
+
+.card p, .card strong, .card-akad p, .card-akad strong {
+  color: #505f41;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.resepsi-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #505f41;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.rings-icon {
+  width: 50px;
+  height: auto;
+  animation: scale-infinity 2s infinite;
+}
+
+@keyframes scale-infinity {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resepsi-container {
+    padding: 15px;
+    margin: 0px;
+    max-width: 95%;
+  }
+
+  .countdown-item {
+    width: 50px;
+    height: 50px;
+  }
+
+  .countdown-time {
+    font-size: 20px;
+  }
+
+  .countdown-label {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,86 @@
+/* src/Styles/Invitation2.css */
+
+.invitation2 {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0px;
+  max-width: 800px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background-image: url('./Green Floral Wedding Invitation.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.invitation2.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+.invitation2 h3 {
+  color: #505f41;
+}
+.invitation2 h2 {
+  font-family: "Great Vibes", cursive;
+  color: #505f41;
+  font-size: 30px;
+}
+.invitation2 h1 {
+  font-family: "Great Vibes", cursive;
+  color: #505f41;
+  font-size: 40px;
+  margin: 0px 70px;
+}
+icon {
+  color: #505f41;
+}
+.namaPria {
+  text-align: start;
+}
+.namaPerempuan {
+  text-align: end;
+}
+
+.invitation2 p {
+  color: #505f41;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.invitation2 button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #505f41;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .invitation2 {
+    padding: 15px;
+    
+    max-width: 100%;
+  }
+
+  .invitation2 p {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

@@ -1,0 +1,30 @@
+/* src/Components/Autoscroll.css */
+.autoscroll-container {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.autoscroll-button {
+  background-color: #505f41;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.autoscroll-button:hover {
+  background-color: #444;
+}
+@media screen and (min-width:600px){
+  .autoscroll-container {
+    right: 20%;
+  }
+}

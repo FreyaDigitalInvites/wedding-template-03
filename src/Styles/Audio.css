@@ -1,0 +1,40 @@
+/* src/Components/Audio.css */
+.audio-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.audio-button {
+  background-color: #505f41;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.audio-button:hover {
+  background-color: #444;
+}
+
+.audio-button.playing {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width:600px){
+  .audio-container {
+    right: 20%;
+  }
